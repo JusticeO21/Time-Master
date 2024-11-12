@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Hero: Time Master</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="clock">
+      <div id="time-display"></div>
+      <div id="settings">
+        <label>
+          12/24-hour format:
+          <select id="hour-format">
+            <option value="24">24-Hour</option>
+            <option value="12">12-Hour</option>
+          </select>
+        </label>
+        <label>
+          Time Zone Offset:
+          <input type="number" id="timezone-offset" placeholder="e.g., -5 for EST" step="1">
+        </label>
+        <label>
+          Color:
+          <input type="color" id="color-picker" value="#000000">
+        </label>
+      </div>
+      <button id="set-alarm">Set Alarm</button>
+      <div id="alarm-time">
+        <input type="time" id="alarm-input">
+        <button id="alarm-btn">Set</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
