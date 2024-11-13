@@ -7,23 +7,31 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header><h1>Time Master</h1></header>
+  <main>
   <div id="app">
+    <section>
+      <article>
+        <p id="time-display"></p>
+      </article>
+    </section>
+   
+    <section>
     <div class="clock">
-      <div id="time-display"></div>
       <div id="settings">
         <label>
-          12/24-hour format:
+          Hour format
           <select id="hour-format">
             <option value="24">24-Hour</option>
             <option value="12">12-Hour</option>
           </select>
         </label>
         <label>
-          Time Zone Offset:
+          Time Zone Offset
           <input type="number" id="timezone-offset" placeholder="e.g., -5 for EST" step="1">
         </label>
-        <label>
-          Color:
+        <label class="color">
+          Color
           <input type="color" id="color-picker" value="#000000">
         </label>
       </div>
@@ -33,7 +41,9 @@
         <button id="alarm-btn">Set</button>
       </div>
     </div>
-  </div>
-  <script type="module" src="scripts/main.js"></script>
+    
+    </div>
+  </main>
+  <script type="module" src="./main.js"></script>
 </body>
 </html>

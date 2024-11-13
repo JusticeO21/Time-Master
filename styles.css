@@ -1,27 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 50px;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  background-color: #f0f0f5;
-  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  background: #EDF4F2;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 500; 
+  display: none;
 }
 
 #app {
   text-align: center;
+  margin: 0 auto;
+  width: 450px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+}
+
+#settings{
+  text-align: left;
+  display:flex;
+  margin: 20px auto;
 }
 
 .clock {
   background-color: #fff;
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  
+}
+
+.notification {
+  background: #31473A;
+  color: #fff;
+  border-radius: 4px;
+  width: 250px;
+  position: absolute;
+  top: 2px;
+  left: 5;
+  height: 60px;
+  border-radius: 4px;
+  transition: all 2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
 }
 
 #time-display {
-  font-size: 2em;
+  font-size: 3rem;
+  font-weight: 600;
   color: #333;
+  height: 60px;
   margin-bottom: 10px;
 }
 
@@ -35,8 +87,29 @@ body {
   margin-top: 10px;
 }
 
+#color-picker{
+  background:transparent;
+}
+
 button {
   padding: 5px 10px;
   margin-top: 10px;
   cursor: pointer;
+  background-color: #F1F1F2;
+  border: 1px solid ;
+}
+
+#set-alarm{
+  padding: 7px 25px;
+}
+
+select {
+  outline: none;
+  padding: 5px;
+  background: transparent;
+}
+
+input{
+  outline: none;
+  padding: 5px;;
 }
