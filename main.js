@@ -17,7 +17,6 @@ function setupClock() {
     const { hours, minutes } = clock.getTime();
     alarmInput.min = `${clock.pad(hours)}:${clock.pad(minutes)}`
     if (clock.checkAlarm()) {
-      alert("Alarm! Time's up!");
       showNotification("Alarm! Time's up!")
       clock.setAlarm(null); // Clear alarm after triggering
     }
